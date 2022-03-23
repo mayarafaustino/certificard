@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+:root {
+	--pale-goldenrod: #f0edc4;
+	--sunray: #DBBA4D;
+	--sepia: #713D10;
+	--chinese-black: #0f121a;
+}
+
+
 body {
-	background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+	background: linear-gradient(236.85deg, #0f121a 27.26%, #0b1c36 96.03%);
 	font-family: 'Roboto', sans-serif;
 	padding: 3rem 6rem;
 }
 .container {
 	color: #1C1C1C;
-	background: #ECF4FF;
+	background: var(--pale-goldenrod);
 	box-shadow: 6px 6px 6px #0E1D2F;
-	border-radius: 20px;
+	border-radius: 12px;
 	padding: 2rem 4rem 4rem 4rem;
 }
 .header {
@@ -22,8 +30,9 @@ body {
 .header-img {
 	width: 158px;
 	height: 160px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25));
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 460px;
+	opacity: 0.8;
 }
 .header-texto {
 	display: flex;
@@ -44,12 +53,12 @@ body {
 .btnTema {
 	align-self: flex-start;
 	padding: 0.5rem 1rem;
-	background: #ECF4FF;
-	border: 2px solid #0E1D2F;
+	background: var(--sepia);
+	border: 2px solid var(--sepia);
 	box-sizing: border-box;
 	border-radius: 100px;
 	font-size: 24px;
-	color: #0E1D2F;
+	color: var(--pale-goldenrod);
 }
 
 
@@ -58,6 +67,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 }
+
 .section {
 	display: flex;
 	flex-direction: column;
@@ -66,7 +76,7 @@ main {
 	
 	padding: 1.5rem 3rem;
 	
-	background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+	background-color: #0000000e;
 	box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
 	border-radius: 20px;
 }
@@ -95,10 +105,24 @@ main {
 	color: #000;
 }
 
-
 .conquistas {
-	
+	width: 10%;
 }
+.conquistas-lista {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+
+}
+.conquistas-item {
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem 0;
+}
+.conquistas-item img {
+	width: 60%;
+}
+
 
 
 

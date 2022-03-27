@@ -22,7 +22,7 @@ body {
 }
 .container {
 	color: #1C1C1C;
-	background: #0000000e;
+	background: #00000011;
 	/* box-shadow: 6px 6px 6px #0E1D2F; */
 	border-radius: 12px;
 	padding: 2rem 4rem 4rem 4rem;
@@ -32,46 +32,65 @@ body {
 	justify-content: space-between;
 	margin-bottom: 1rem;	
 }
-.header-perfil {
-	display: flex;
-}
-.header-img {
-	width: 158px;
-	height: 160px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 460px;
-	opacity: 0.8;
-}
 .header-texto {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-left: 1rem;
+	
 }
 .header-texto h1 {
 	font-family: var(--josefin);
-	font-weight: 200;
-	font-size: 54px;
-	margin: .5rem 0;
+	font-weight: 300;
+	font-size: 64px;
+	margin: 1rem 0;
 }
 .header-texto h2 {
 	font-weight: 400;
 	font-size: 20px;
-	margin: .5rem 0;
+	
 	padding-left: 0.25rem;
+}
+.contato {
+	display: flex;
+	padding: 5rem 0 0 0;
+}
+.contato-box {
+	padding: 00.25rem;
+	border: 2px solid var(--pale);
+	border-radius: 8px;
+	margin-right: 1rem;
+	display: flex;
+	justify-content: center;
+	background-color: var(--pale);
+}
+.contato-box:hover {
+	border: 2px solid var(--detalhes);
+}
+.link-contato {
+	text-decoration: none;
+	padding: .25rem;
+}
+.icon-contato {
+	width: 1.7rem;
+	
 }
 .btnTema {
 	align-self: flex-start;
 	padding: 0.5rem 1rem;
-	background: var(--detalhes);
-	border: 2px solid var(--detalhes);
 	box-sizing: border-box;
 	border-radius: 20px;
 	font-family: var(--roboto-mono);
 	font-size: 18px;
-	color: var(--pale);
+	background: var(--pale);
+	border: 2px solid var(--detalhes);
+	color: var(--detalhes);
 }
-
+.btnTema:hover {
+	background: var(--detalhes);
+	
+	color: var(--pale);
+	
+}
 
 
 main {
@@ -81,15 +100,9 @@ main {
 
 .section {
 	display: flex;
-	flex-direction: column;
-	
-	margin-top: 2rem;
-	
+	flex-direction: column;	
 	padding: 1.5rem 3rem;
-	
-	/* background-color: #0000000e;
-	box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42); */
-	border: 6px solid var(--pale);
+	background-color: var(--pale);
 	border-radius: 12px;
 }
 .section h3 {
@@ -169,17 +182,46 @@ iframe:hover {
 
 /* Dark theme */
 .dark {
-	background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+	background: linear-gradient(236.85deg, #010002 37.26%, #0b0114 96.03%);
 }
 .dark .container {
-	background: #333439;
+	background: #3b3a3d;
+	color: var(--pale);
 }
 .dark .header-texto {
 	color: #F6F6F6;
 
 }
 .dark .btnTema {
-	background: #1C1C1C;
-	border: 2px solid #F7F7F7;
-	color: #FFFFFF;
+	background: #161516;
+	border: 2px solid #161516;
+	color: var(--pale);
 }
+.dark .btnTema:hover {
+	background: var(--pale);
+	color: #161516;
+}
+.dark .section {
+	background-color: #161516;
+}
+.dark .projetos a {
+	border: 2px solid var(--pale);
+	color: var(--pale);
+}
+.dark .projetos a:hover {
+	color: #161516;
+	background-color: var(--pale);
+	border: 2px solid var(--pale);
+}
+.dark .contato-box {
+	background: #3b3a3d;
+	border: 2px solid #161516;
+}
+.dark .contato-box:hover {
+	background-color: var(--pale);
+}
+
+
+
+
+
